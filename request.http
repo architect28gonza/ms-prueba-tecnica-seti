@@ -1,0 +1,68 @@
+
+# AGREGAR UNA NUEVA FRANQUICIA -> COMPLETADA
+GET http://localhost:8080/api/v1/franquicia/fran2
+Content-Type: application/json
+
+# ACTUALIZAR EL NOMBRE DE UNA FRANQUICIA -> COMPLETADA
+PUT http://localhost:8080/api/v1/franquicia
+Content-Type: application/json
+
+{
+    "id": 82,
+    "nombre": "dasddwqqq"
+}
+
+###########################################################
+
+# AGREGAR UNA NUEVA SUCURSAL -> COMPLETADA
+POST http://localhost:8080/api/v1/sucursal
+Content-Type: application/json
+
+{
+  "nombre": "sucursal2",
+  "franquicia": {
+    "id": 1
+  }
+}
+
+# ACTUALIZAR EL NOMBRE DE UNA SUCURSAL -> COMPLETADA
+PUT http://localhost:8080/api/v1/sucursal
+Content-Type: application/json
+
+{
+    "id": 14,
+    "nombre": "sucursal2"
+}
+
+
+###########################################################
+
+# AGREGAR UN NUEVO PRODUCTO -> COMPLETADA
+POST http://localhost:8080/api/v1/producto
+Content-Type: application/json
+
+{
+  "nombre": "sddddsss",
+  "stock": 3,
+  "sucursal": {
+    "id": 12
+  }
+}
+
+
+# ELIMINAR UN PRODUCTO -> COMPLETADA
+DELETE http://localhost:8080/api/v1/producto/1
+Content-Type: application/json
+
+
+# ACTUALIZAR EL NOMBRE DE UN PRODUCTO -> COMPLETADA
+PUT http://localhost:8080/api/v1/producto
+Content-Type: application/json
+
+{
+    "id": 52,
+    "stock": 222
+}
+
+GET http://localhost:8080/api/v1/producto/1
+Content-Type: application/json

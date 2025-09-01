@@ -24,9 +24,9 @@ cors:
   allowed-origins: "http://localhost:4200,http://localhost:8080"
 adapters:
   r2dbc:
-    host: "localhost"
-    port: 5432
-    database: "db_gestion_franquicia"
+    host: ${SPRING_HOST}
+    port: ${SPRING_PUERTO}
+    database: ${SPRING_DATABASE}
     schema: "public"
-    username: "postgres"
-    password: "Angeljesus7*"
+    username: ${SPRING_USERNAME}
+    password: ${SPRING_PASSWORD}
